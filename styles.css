@@ -23,17 +23,8 @@ header h1 {
 }
 
 header h1 a {
-  color: #222;
-  text-decoration: none;
-  pointer-events: auto;
-}
-
-header h1 a:visited,
-header h1 a:hover,
-header h1 a:active,
-header h1 a:focus {
-  color: #222;
-  text-decoration: none;
+  all: unset;
+  cursor: pointer;
 }
 
 nav {
