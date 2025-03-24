@@ -1,54 +1,66 @@
 body {
-  font-family: Georgia, serif;
-  background-color: #fff;
-  color: #111;
   margin: 0;
-  padding: 2rem 1.5rem;
+  padding: 0;
+  font-family: 'EB Garamond', serif;
+  font-size: 18px;
   line-height: 1.7;
-  max-width: 720px;
-  margin-left: auto;
-  margin-right: auto;
+  background: #fdfdfc;
+  color: #222;
 }
 
-.site-title {
-  font-size: 1.6rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-nav {
+.container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 2rem;
-  font-size: 0.9rem;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  gap: 3rem;
 }
 
-nav a {
+.sidebar {
+  min-width: 200px;
+  flex-shrink: 0;
+  border-right: 1px solid #ddd;
+  padding-right: 2rem;
+}
+
+.sidebar h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: normal;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sidebar nav a {
   text-decoration: none;
   color: #444;
+  font-size: 0.95rem;
 }
 
-nav a:hover {
+.sidebar nav a:hover {
   text-decoration: underline;
 }
 
-main {
-  text-align: left;
+.content {
+  flex-grow: 1;
 }
 
-main p {
+.content p {
+  margin-bottom: 1.5rem;
   white-space: pre-wrap;
-  margin-bottom: 1.6rem;
 }
 
 .melipal {
-  text-align: left;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .melipal img {
-  max-width: 130px;
+  max-width: 140px;
   margin-bottom: 0.5rem;
 }
 
@@ -59,8 +71,7 @@ main p {
 }
 
 footer {
-  font-size: 0.8rem;
-  color: #888;
   margin-top: 4rem;
-  text-align: left;
+  font-size: 0.8rem;
+  color: #aaa;
 }
