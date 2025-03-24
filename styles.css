@@ -10,55 +10,51 @@ body {
   color: #222;
 }
 
-.container {
-  display: flex;
-  flex-direction: row;
-  gap: 3rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 3rem 2rem;
+header {
+  padding: 2rem 1.5rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
 }
 
-.sidebar {
-  min-width: 200px;
-  flex-shrink: 0;
-  border-right: 1px solid #ddd;
-  padding-right: 2rem;
-}
-
-.sidebar h1 {
-  font-size: 1.5rem;
+header h1 {
+  font-size: 1.6rem;
   font-weight: normal;
-  margin-bottom: 1.5rem;
+  margin: 0 0 0.5rem 0;
 }
 
-.sidebar nav {
+nav {
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
 }
 
-.sidebar nav a {
+nav a {
   text-decoration: none;
   color: #444;
-  font-size: 0.95rem;
 }
 
-.sidebar nav a:hover {
+nav a:hover {
   text-decoration: underline;
 }
 
-.content {
-  flex-grow: 1;
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+  text-align: left;
 }
 
-.content p {
+main p {
   margin-bottom: 1.5rem;
   white-space: pre-wrap;
 }
 
 .melipal {
   margin-top: 3rem;
+  text-align: center;
 }
 
 .melipal img {
@@ -73,46 +69,8 @@ body {
 }
 
 footer {
-  margin-top: 4rem;
+  text-align: center;
   font-size: 0.8rem;
   color: #aaa;
-}
-
-/* ===== MOBILE ADJUSTMENTS ===== */
-@media screen and (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    padding: 2rem 1.5rem;
-  }
-
-  .sidebar {
-    border: none;
-    padding: 0;
-    margin-bottom: 2rem;
-  }
-
-  .sidebar h1 {
-    text-align: center;
-    font-size: 1.4rem;
-  }
-
-  .sidebar nav {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    font-size: 0.85rem;
-  }
-
-  .content {
-    font-size: 1rem;
-  }
-
-  .melipal {
-    text-align: center;
-  }
-
-  footer {
-    text-align: center;
-  }
+  margin-top: 4rem;
 }
