@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
 body {
   margin: 0;
   padding: 0;
@@ -10,11 +12,11 @@ body {
 
 .container {
   display: flex;
-  min-height: 100vh;
+  flex-direction: row;
+  gap: 3rem;
   max-width: 1200px;
   margin: 0 auto;
   padding: 3rem 2rem;
-  gap: 3rem;
 }
 
 .sidebar {
@@ -26,8 +28,8 @@ body {
 
 .sidebar h1 {
   font-size: 1.5rem;
-  margin-bottom: 1.5rem;
   font-weight: normal;
+  margin-bottom: 1.5rem;
 }
 
 .sidebar nav {
@@ -74,4 +76,43 @@ footer {
   margin-top: 4rem;
   font-size: 0.8rem;
   color: #aaa;
+}
+
+/* ===== MOBILE ADJUSTMENTS ===== */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+  }
+
+  .sidebar {
+    border: none;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+
+  .sidebar h1 {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+
+  .sidebar nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 0.85rem;
+  }
+
+  .content {
+    font-size: 1rem;
+  }
+
+  .melipal {
+    text-align: center;
+  }
+
+  footer {
+    text-align: center;
+  }
 }
