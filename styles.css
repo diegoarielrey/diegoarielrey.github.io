@@ -23,8 +23,19 @@ header h1 {
 }
 
 header h1 a {
-  all: unset;
-  cursor: pointer;
+  text-decoration: none;
+  color: #222;
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'EB Garamond', serif;
+}
+
+header h1 a:visited,
+header h1 a:hover,
+header h1 a:active,
+header h1 a:focus {
+  text-decoration: none;
+  color: #222;
 }
 
 nav {
