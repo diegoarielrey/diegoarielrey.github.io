@@ -1,80 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap');
-
 body {
-  font-family: 'EB Garamond', Georgia, serif;
-  background-color: #fdfaf7;
-  color: #2a2a2a;
+  font-family: Georgia, serif;
+  background: #fff;
+  color: #111;
   margin: 0;
-  padding: 0;
-  line-height: 1.8;
-  font-size: 18px;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding: 40px 50px 20px;
-  background: #fdfaf7;
-}
-
-header h1 {
-  font-size: 22px;
-  font-weight: 500;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  margin: 0;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 400;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 0.07em;
-}
-
-main {
+  padding: 2rem 1.5rem;
+  line-height: 1.7;
   max-width: 700px;
-  margin: 0 auto;
-  padding: 30px 40px 60px;
-  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+nav a {
+  color: #222;
+  text-decoration: none;
+  margin-right: 0.75rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 
 main p {
-  white-space: pre-wrap;
-  margin-bottom: 24px;
+  margin-bottom: 1.4rem;
 }
 
 .melipal {
-  text-align: center;
-  margin-top: 60px;
+  margin-top: 3rem;
+  text-align: left;
 }
 
 .melipal img {
-  max-width: 140px;
-  margin: 20px 0 10px;
+  max-width: 120px;
+  margin-bottom: 0.5rem;
 }
 
 .caption {
   font-style: italic;
-  font-size: 0.95em;
-  color: #444;
-  margin-top: 0;
+  font-size: 0.85rem;
+  color: #555;
 }
 
 footer {
-  text-align: center;
-  font-size: 0.8em;
-  color: #888;
-  margin: 60px 0 30px;
+  font-size: 0.8rem;
+  color: #aaa;
+  text-align: left;
+  margin-top: 4rem;
 }
