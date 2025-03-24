@@ -22,34 +22,36 @@ header h1 {
   margin: 0 0 0.5rem 0;
 }
 
-header h1 a {
-  text-decoration: none;
-  color: #222;
-  font-weight: normal;
-  font-style: normal;
-  font-family: 'EB Garamond', serif;
-}
-
+header h1 a,
+header h1 a:link,
 header h1 a:visited,
 header h1 a:hover,
 header h1 a:active,
 header h1 a:focus {
-  text-decoration: none;
-  color: #222;
+  color: #222 !important;
+  text-decoration: none !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+  font-family: 'EB Garamond', serif !important;
+  pointer-events: auto;
 }
 
 nav {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 1.5rem;
   font-size: 0.95rem;
   margin-top: 0.5rem;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 0.25rem;
+  -webkit-overflow-scrolling: touch;
 }
 
 nav a {
   text-decoration: none;
   color: #444;
+  flex-shrink: 0;
 }
 
 nav a:hover {
