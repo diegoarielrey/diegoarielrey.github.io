@@ -10,36 +10,23 @@ body {
   margin-right: auto;
 }
 
-header {
-  margin-bottom: 2rem;
-}
-
-header h1 {
+.site-title {
   font-size: 1.6rem;
-  font-weight: normal;
+  font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
 nav {
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
-  gap: 15px;
-}
-
-nav ul li {
-  display: inline;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
 }
 
 nav a {
-  color: #111;
   text-decoration: none;
+  color: #444;
 }
 
 nav a:hover {
