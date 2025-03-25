@@ -38,8 +38,9 @@ header h1 a {
 
 .nav-scroll {
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
   white-space: nowrap;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
 }
 
 nav {
