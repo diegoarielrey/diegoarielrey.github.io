@@ -6,10 +6,11 @@ html, body {
   font-family: 'EB Garamond', serif;
   font-size: 18px;
   line-height: 1.7;
-  background: #fdfdfc;
+  background-color: #fdfdfc;
   color: #222;
 }
 
+/* BODY LINKS */
 main a,
 main a:visited,
 main a:hover,
@@ -18,6 +19,7 @@ main a:active {
   text-decoration: underline;
 }
 
+/* HEADER + NAV LINK RESET */
 header h1 a,
 nav a {
   all: unset;
@@ -31,20 +33,15 @@ nav a:hover {
   text-decoration: underline !important;
 }
 
+/* STICKY HEADER */
 header {
   position: sticky;
   top: 0;
   z-index: 1000;
   background: #fdfdfc;
-  padding: 1rem;
+  padding: 1.25rem 1rem 0.75rem;
   text-align: center;
   border-bottom: 1px solid #ddd;
-  height: 120px;
-  box-sizing: border-box;
-}
-
-.header-spacer {
-  height: 120px;
 }
 
 header h1 {
@@ -68,10 +65,11 @@ nav a {
   flex-shrink: 0;
 }
 
+/* MAIN — exact padding to clear sticky nav visually */
 main {
   max-width: 720px;
   margin: 0 auto;
-  padding: 0 1.5rem 4rem;
+  padding: 4rem 1.5rem 4rem;
   text-align: left;
 }
 
