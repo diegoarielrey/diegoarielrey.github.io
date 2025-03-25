@@ -19,7 +19,7 @@ main a:active {
   text-decoration: underline;
 }
 
-/* HEADER LINKS LOOK LIKE TEXT */
+/* HEADER + NAV LINK RESET */
 header h1 a,
 nav a {
   all: unset;
@@ -50,7 +50,7 @@ header h1 {
   margin: 0 0 0.5rem 0;
 }
 
-/* NAV — this version uses default wrapping if needed */
+/* NAV */
 nav {
   display: flex;
   justify-content: center;
@@ -60,10 +60,11 @@ nav {
   padding-bottom: 0.25rem;
 }
 
+/* MAIN CONTENT */
 main {
   max-width: 720px;
   margin: 0 auto;
-  padding: 7rem 1.5rem 4rem;
+  padding: 5rem 1.5rem 4rem;
   text-align: left;
 }
 
