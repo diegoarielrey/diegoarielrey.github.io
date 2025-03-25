@@ -10,7 +10,7 @@ body {
   color: #222;
 }
 
-/* BODY LINK STYLES */
+/* BODY LINKS */
 main a,
 main a:visited,
 main a:hover,
@@ -19,22 +19,19 @@ main a:active {
   text-decoration: underline;
 }
 
-/* NAV + HEADER LINK RESET */
+/* HEADER + NAV LINKS */
 header h1 a,
 nav a {
   all: unset;
   cursor: pointer;
+  font-family: 'EB Garamond', serif;
   color: #222 !important;
-  text-decoration: none !important;
-  font-family: 'EB Garamond', serif !important;
 }
 
-/* Optional: nav hover styling */
 nav a:hover {
-  text-decoration: underline !important;
+  text-decoration: underline;
 }
 
-/* HEADER LAYOUT */
 header {
   padding: 2rem 1.5rem 1rem;
   text-align: center;
@@ -47,28 +44,30 @@ header h1 {
   margin: 0 0 0.5rem 0;
 }
 
-/* NAV SCROLL BEHAVIOR */
-.nav-scroll {
-  overflow-x: auto;
-  white-space: nowrap;
-  width: 100%;
-  -webkit-overflow-scrolling: touch;
-}
-
-/* NAV CONTENT LAYOUT */
+/* NAV */
 nav {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
   gap: 1.5rem;
   font-size: 0.95rem;
-  padding-bottom: 0.25rem;
+  margin-top: 0.5rem;
+  overflow: hidden;
 }
 
-/* NAV LINKS STAY INLINE */
+/* Prevent shrinking on small screens */
 nav a {
   flex-shrink: 0;
 }
 
-/* MAIN CONTENT */
+/* Responsive adjustment */
+@media (max-width: 500px) {
+  nav {
+    gap: 1rem;
+    font-size: 0.85rem;
+  }
+}
+
 main {
   max-width: 720px;
   margin: 0 auto;
@@ -81,7 +80,6 @@ main p {
   white-space: pre-wrap;
 }
 
-/* MELIPAL SECTION */
 .melipal {
   margin-top: 3rem;
   text-align: center;
@@ -98,7 +96,6 @@ main p {
   color: #555;
 }
 
-/* FOOTER */
 footer {
   text-align: center;
   font-size: 0.8rem;
