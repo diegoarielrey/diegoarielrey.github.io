@@ -10,7 +10,7 @@ body {
   color: #222;
 }
 
-/* BODY LINKS */
+/* Body links */
 main a,
 main a:visited,
 main a:hover,
@@ -19,21 +19,20 @@ main a:active {
   text-decoration: underline;
 }
 
-/* HEADER + NAV LINK RESET */
+/* Nav + header links = plain text look */
 header h1 a,
 nav a {
   all: unset;
   cursor: pointer;
-  color: #222 !important;
-  text-decoration: none !important;
   font-family: 'EB Garamond', serif;
+  color: #222 !important;
 }
 
 nav a:hover {
   text-decoration: underline !important;
 }
 
-/* STICKY HEADER */
+/* Sticky header */
 header {
   position: sticky;
   top: 0;
@@ -50,24 +49,22 @@ header h1 {
   margin: 0 0 0.5rem 0;
 }
 
-/* NAV */
 nav {
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
-  gap: 1.2rem;
+  gap: 1.5rem;
   font-size: 0.95rem;
-  padding: 0 0 0.25rem;
-  max-width: 100%;
+  padding-bottom: 0.25rem;
   overflow: hidden;
   white-space: nowrap;
 }
 
 nav a {
   flex-shrink: 0;
+  white-space: nowrap;
 }
 
-/* MAIN CONTENT */
 main {
   max-width: 720px;
   margin: 0 auto;
