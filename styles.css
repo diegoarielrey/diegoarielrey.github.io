@@ -20,7 +20,7 @@ main a:active {
   text-decoration: underline;
 }
 
-/* HEADER + NAV LINKS AS TEXT */
+/* HEADER + NAV LINKS = PLAIN TEXT */
 header h1 a,
 nav a {
   all: unset;
@@ -40,9 +40,11 @@ header {
   top: 0;
   z-index: 1000;
   background: #fdfdfc;
-  padding: 1.25rem 1rem 0.75rem;
+  height: 130px; /* ✅ Set fixed height */
+  padding: 1rem;
   text-align: center;
   border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
 }
 
 header h1 {
@@ -65,14 +67,12 @@ nav {
 main {
   max-width: 720px;
   margin: 0 auto;
-  padding: 1rem 1.5rem 4rem;
+  padding: 130px 1.5rem 4rem; /* ✅ Match header height here */
   text-align: left;
 }
 
-/* Nuke all top margin from first content */
-main *:first-child {
+main p:first-of-type {
   margin-top: 0 !important;
-  padding-top: 0 !important;
 }
 
 main p {
