@@ -19,19 +19,21 @@ main a:active {
   text-decoration: underline;
 }
 
-/* HEADER + NAV LINKS */
+/* HEADER AND NAV LINK RESET */
 header h1 a,
-nav a {
-  all: unset;
-  cursor: pointer;
-  font-family: 'EB Garamond', serif;
+header nav a {
   color: #222 !important;
+  text-decoration: none !important;
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'EB Garamond', serif;
 }
 
-nav a:hover {
-  text-decoration: underline;
+header nav a:hover {
+  text-decoration: underline !important;
 }
 
+/* HEADER */
 header {
   padding: 2rem 1.5rem 1rem;
   text-align: center;
@@ -44,23 +46,33 @@ header h1 {
   margin: 0 0 0.5rem 0;
 }
 
+header h1 a {
+  all: unset;
+  cursor: pointer;
+}
+
 /* NAV */
+.nav-scroll {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 nav {
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
-  gap: 1.5rem;
+  gap: 1.25rem;
   font-size: 0.95rem;
-  margin-top: 0.5rem;
-  overflow: hidden;
+  padding-bottom: 0.25rem;
 }
 
-/* Prevent shrinking on small screens */
+/* Prevent shrinking or wrapping */
 nav a {
   flex-shrink: 0;
+  white-space: nowrap;
 }
 
-/* Responsive adjustment */
+/* RESPONSIVE: shrink font slightly on smaller screens */
 @media (max-width: 500px) {
   nav {
     gap: 1rem;
@@ -68,6 +80,7 @@ nav a {
   }
 }
 
+/* MAIN CONTENT */
 main {
   max-width: 720px;
   margin: 0 auto;
@@ -80,6 +93,7 @@ main p {
   white-space: pre-wrap;
 }
 
+/* MELIPAL */
 .melipal {
   margin-top: 3rem;
   text-align: center;
@@ -96,6 +110,7 @@ main p {
   color: #555;
 }
 
+/* FOOTER */
 footer {
   text-align: center;
   font-size: 0.8rem;
