@@ -10,6 +10,15 @@ body {
   color: #222;
 }
 
+a {
+  color: #0645ad;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #0645ad;
+}
+
 header {
   padding: 2rem 1.5rem 1rem;
   text-align: center;
