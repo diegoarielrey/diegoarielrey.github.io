@@ -10,7 +10,7 @@ body {
   color: #222;
 }
 
-/* Body links */
+/* BODY LINKS */
 main a,
 main a:visited,
 main a:hover,
@@ -19,20 +19,21 @@ main a:active {
   text-decoration: underline;
 }
 
-/* Nav + header links = plain text look */
+/* HEADER LINKS LOOK LIKE TEXT */
 header h1 a,
 nav a {
   all: unset;
   cursor: pointer;
-  font-family: 'EB Garamond', serif;
   color: #222 !important;
+  text-decoration: none !important;
+  font-family: 'EB Garamond', serif;
 }
 
 nav a:hover {
   text-decoration: underline !important;
 }
 
-/* Sticky header */
+/* STICKY HEADER */
 header {
   position: sticky;
   top: 0;
@@ -49,20 +50,14 @@ header h1 {
   margin: 0 0 0.5rem 0;
 }
 
+/* NAV — this version uses default wrapping if needed */
 nav {
   display: flex;
   justify-content: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 1.5rem;
   font-size: 0.95rem;
   padding-bottom: 0.25rem;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-nav a {
-  flex-shrink: 0;
-  white-space: nowrap;
 }
 
 main {
