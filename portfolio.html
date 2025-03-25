@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Diego Rey</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+  <style>
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    .portfolio-item {
+      text-align: center;
+    }
+    .portfolio-item img {
+      max-width: 100px;
+      height: auto;
+      display: block;
+      margin: 0 auto 0.5rem;
+    }
+    .badge {
+      display: inline-block;
+      background: #ccc;
+      font-size: 0.7rem;
+      padding: 0.2rem 0.4rem;
+      border-radius: 6px;
+      margin-top: 0.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="index.html">Diego Rey</a></h1>
+    <nav>
+      <a href="DiegoRey_CV_March_2025.pdf" target="_blank">CV</a>
+      <a href="https://scholar.google.com/citations?user=e81k_fIAAAAJ&hl=en" target="_blank">Publications</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="consulting.html">Consulting</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <p>Selected companies Diego has invested in or advised:</p>
+      <div class="portfolio-grid">
+
+        <div class="portfolio-item">
+          <a href="https://www.indeelabs.com" target="_blank">
+            <img src="logos/indee.png" alt="Indee Labs" />
+          </a>
+        </div>
+
+        <div class="portfolio-item">
+          <a href="https://billiontoone.com" target="_blank">
+            <img src="logos/bto.png" alt="BillionToOne" />
+          </a>
+          <div class="badge">Exit</div>
+        </div>
+
+        <div class="portfolio-item">
+          <a href="https://www.shasqi.com" target="_blank">
+            <img src="logos/shasqi.png" alt="Shasqi" />
+          </a>
+        </div>
+
+        <div class="portfolio-item">
+          <a href="https://www.meruhealth.com" target="_blank">
+            <img src="logos/meru.png" alt="Meru Health" />
+          </a>
+        </div>
+
+        <div class="portfolio-item">
+          <a href="https://vibebio.com" target="_blank">
+            <img src="logos/vibe.png" alt="Vibe Bio" />
+          </a>
+        </div>
+
+        <div class="portfolio-item">
+          <a href="https://fidocure.com" target="_blank">
+            <img src="logos/fidocure.png" alt="FidoCure" />
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Diego Rey</p>
+  </footer>
+</body>
+</html>
