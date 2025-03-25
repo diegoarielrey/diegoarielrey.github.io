@@ -6,7 +6,7 @@ html, body {
   font-family: 'EB Garamond', serif;
   font-size: 18px;
   line-height: 1.7;
-  background: #fdfdfc;
+  background-color: #fdfdfc;
   color: #222;
 }
 
@@ -19,7 +19,7 @@ main a:active {
   text-decoration: underline;
 }
 
-/* HEADER + NAV LINKS = PLAIN TEXT */
+/* HEADER + NAV LINK RESET */
 header h1 a,
 nav a {
   all: unset;
@@ -42,12 +42,6 @@ header {
   padding: 1.25rem 1rem 0.75rem;
   text-align: center;
   border-bottom: 1px solid #ddd;
-  height: 120px;
-  box-sizing: border-box;
-}
-
-.header-spacer {
-  height: 120px;
 }
 
 header h1 {
@@ -56,25 +50,27 @@ header h1 {
   margin: 0 0 0.5rem 0;
 }
 
+/* NAV */
 nav {
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
-  gap: 1.25rem;
-  font-size: 0.95rem;
+  gap: 1.1rem;
+  font-size: 0.85rem;
   padding-bottom: 0.25rem;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 nav a {
   flex-shrink: 0;
-  white-space: nowrap;
 }
 
+/* MAIN */
 main {
   max-width: 720px;
   margin: 0 auto;
-  padding: 0 1.5rem 4rem;
+  padding: 4.5rem 1.5rem 4rem;
   text-align: left;
 }
 
