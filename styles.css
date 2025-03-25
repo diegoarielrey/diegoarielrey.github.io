@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 
+html,
 body {
   margin: 0;
   padding: 0;
@@ -19,7 +20,7 @@ main a:active {
   text-decoration: underline;
 }
 
-/* HEADER & NAV LINKS = PLAIN TEXT */
+/* HEADER & NAV LINKS = TEXT STYLE */
 header h1 a,
 nav a {
   all: unset;
@@ -42,7 +43,7 @@ header {
   padding: 1rem 1rem 0.5rem;
   text-align: center;
   border-bottom: 1px solid #ddd;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 header h1 {
@@ -51,6 +52,7 @@ header h1 {
   margin: 0 0 0.3rem 0;
 }
 
+/* NAVIGATION */
 nav {
   display: flex;
   justify-content: center;
@@ -69,7 +71,7 @@ main {
   text-align: left;
 }
 
-/* Eliminate any default top margin */
+/* Remove first p top margin */
 main p:first-of-type {
   margin-top: 0 !important;
 }
@@ -79,6 +81,7 @@ main p {
   white-space: pre-wrap;
 }
 
+/* MELIPAL SECTION */
 .melipal {
   margin-top: 3rem;
   text-align: center;
