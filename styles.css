@@ -19,7 +19,7 @@ main a:active {
   text-decoration: underline;
 }
 
-/* HEADER + NAV LINK RESET */
+/* HEADER & NAV LINK RESET */
 header h1 a,
 nav a {
   all: unset;
@@ -50,6 +50,7 @@ header h1 {
   margin: 0 0 0.5rem 0;
 }
 
+/* NAV */
 nav {
   display: flex;
   justify-content: center;
@@ -65,11 +66,11 @@ nav a {
   flex-shrink: 0;
 }
 
-/* MAIN — exact padding to clear sticky nav visually */
+/* MAIN */
 main {
   max-width: 720px;
   margin: 0 auto;
-  padding: 4rem 1.5rem 4rem;
+  padding: 4.5rem 1.5rem 4rem;
   text-align: left;
 }
 
