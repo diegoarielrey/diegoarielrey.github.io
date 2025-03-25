@@ -10,29 +10,31 @@ body {
   color: #222;
 }
 
-/* Default link styles (for body) */
-main a {
+/* BODY LINK STYLES */
+main a,
+main a:visited,
+main a:hover,
+main a:active {
   color: #0645ad;
   text-decoration: underline;
 }
 
-main a:visited {
-  color: #0645ad;
-}
-
-/* Header + nav reset link styling */
+/* NAV + HEADER LINK RESET */
 header h1 a,
 nav a {
   all: unset;
-  font-weight: normal;
   cursor: pointer;
+  color: #222 !important;
+  text-decoration: none !important;
+  font-family: 'EB Garamond', serif !important;
 }
 
-/* Allow nav hover underline */
+/* Optional: nav hover styling */
 nav a:hover {
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 
+/* HEADER LAYOUT */
 header {
   padding: 2rem 1.5rem 1rem;
   text-align: center;
@@ -45,6 +47,7 @@ header h1 {
   margin: 0 0 0.5rem 0;
 }
 
+/* NAV SCROLL BEHAVIOR */
 .nav-scroll {
   overflow-x: auto;
   white-space: nowrap;
@@ -52,6 +55,7 @@ header h1 {
   -webkit-overflow-scrolling: touch;
 }
 
+/* NAV CONTENT LAYOUT */
 nav {
   display: inline-flex;
   gap: 1.5rem;
@@ -59,6 +63,12 @@ nav {
   padding-bottom: 0.25rem;
 }
 
+/* NAV LINKS STAY INLINE */
+nav a {
+  flex-shrink: 0;
+}
+
+/* MAIN CONTENT */
 main {
   max-width: 720px;
   margin: 0 auto;
@@ -71,6 +81,7 @@ main p {
   white-space: pre-wrap;
 }
 
+/* MELIPAL SECTION */
 .melipal {
   margin-top: 3rem;
   text-align: center;
@@ -87,6 +98,7 @@ main p {
   color: #555;
 }
 
+/* FOOTER */
 footer {
   text-align: center;
   font-size: 0.8rem;
