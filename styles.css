@@ -19,7 +19,7 @@ main a:active {
   text-decoration: underline;
 }
 
-/* NAV + HEADER LINKS = TEXT STYLE */
+/* HEADER & NAV LINKS = PLAIN TEXT */
 header h1 a,
 nav a {
   all: unset;
@@ -39,15 +39,16 @@ header {
   top: 0;
   z-index: 1000;
   background: #fdfdfc;
-  padding: 1.5rem 1rem 1rem;
+  padding: 1rem 1rem 0.5rem;
   text-align: center;
   border-bottom: 1px solid #ddd;
+  margin-bottom: 0;
 }
 
 header h1 {
   font-size: 1.6rem;
   font-weight: normal;
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.3rem 0;
 }
 
 nav {
@@ -56,20 +57,21 @@ nav {
   flex-wrap: wrap;
   gap: 1.5rem;
   font-size: 0.95rem;
-  padding-bottom: 0.25rem;
+  padding: 0;
+  margin: 0;
 }
 
-/* MAIN */
+/* MAIN CONTENT */
 main {
   max-width: 720px;
   margin: 0 auto;
-  padding: 5rem 1.5rem 4rem;
+  padding: 2rem 1.5rem 4rem;
   text-align: left;
 }
 
-/* ✨ REMOVE default top margin on first <p> */
+/* Eliminate any default top margin */
 main p:first-of-type {
-  margin-top: 0;
+  margin-top: 0 !important;
 }
 
 main p {
