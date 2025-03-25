@@ -10,13 +10,27 @@ body {
   color: #222;
 }
 
-a {
+/* Default link styles (for body) */
+main a {
   color: #0645ad;
   text-decoration: underline;
 }
 
-a:visited {
+main a:visited {
   color: #0645ad;
+}
+
+/* Header + nav reset link styling */
+header h1 a,
+nav a {
+  all: unset;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+/* Allow nav hover underline */
+nav a:hover {
+  text-decoration: underline;
 }
 
 header {
@@ -31,11 +45,6 @@ header h1 {
   margin: 0 0 0.5rem 0;
 }
 
-header h1 a {
-  all: unset;
-  cursor: pointer;
-}
-
 .nav-scroll {
   overflow-x: auto;
   white-space: nowrap;
@@ -48,16 +57,6 @@ nav {
   gap: 1.5rem;
   font-size: 0.95rem;
   padding-bottom: 0.25rem;
-}
-
-nav a {
-  text-decoration: none;
-  color: #444;
-  flex-shrink: 0;
-}
-
-nav a:hover {
-  text-decoration: underline;
 }
 
 main {
