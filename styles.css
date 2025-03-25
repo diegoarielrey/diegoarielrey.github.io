@@ -14,7 +14,6 @@ header {
   padding: 2rem 1.5rem 1rem;
   text-align: center;
   border-bottom: 1px solid #ddd;
-  overflow-x: auto;
 }
 
 header h1 {
@@ -23,21 +22,12 @@ header h1 {
   margin: 0 0 0.5rem 0;
 }
 
-header h1 a,
-header h1 a:link,
-header h1 a:visited,
-header h1 a:hover,
-header h1 a:active,
-header h1 a:focus {
-  color: #222 !important;
-  text-decoration: none !important;
-  font-weight: normal !important;
-  font-style: normal !important;
-  font-family: 'EB Garamond', serif !important;
-  pointer-events: auto;
+header h1 a {
+  all: unset;
+  cursor: pointer;
 }
 
-.nav-wrapper {
+.nav-scroll {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   white-space: nowrap;
@@ -47,7 +37,6 @@ nav {
   display: inline-flex;
   gap: 1.5rem;
   font-size: 0.95rem;
-  margin-top: 0.5rem;
   padding-bottom: 0.25rem;
 }
 
