@@ -62,11 +62,11 @@ nav a {
   flex-shrink: 0;
 }
 
-/* 🛠 SHRINKED SPACING */
+/* 🛠 MUCH SMALLER top padding */
 main {
   max-width: 720px;
   margin: 0 auto;
-  padding: 3.75rem 1.5rem 4rem;
+  padding: 2.25rem 1.5rem 4rem;
   text-align: left;
 }
 
