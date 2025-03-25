@@ -7,7 +7,7 @@ body {
   font-family: 'EB Garamond', serif;
   font-size: 18px;
   line-height: 1.7;
-  background: #fdfdfc;
+  background-color: #fdfdfc;
   color: #222;
 }
 
@@ -20,7 +20,7 @@ main a:active {
   text-decoration: underline;
 }
 
-/* HEADER & NAV LINKS = PLAIN TEXT */
+/* HEADER + NAV LINKS AS TEXT */
 header h1 a,
 nav a {
   all: unset;
@@ -40,7 +40,7 @@ header {
   top: 0;
   z-index: 1000;
   background: #fdfdfc;
-  padding: 1.5rem 1rem 1rem;
+  padding: 1.25rem 1rem 0.75rem;
   text-align: center;
   border-bottom: 1px solid #ddd;
 }
@@ -57,19 +57,22 @@ nav {
   flex-wrap: wrap;
   gap: 1.5rem;
   font-size: 0.95rem;
-  padding-bottom: 0.25rem;
+  padding: 0;
+  margin: 0;
 }
 
 /* MAIN CONTENT */
 main {
   max-width: 720px;
   margin: 0 auto;
-  padding: 4.5rem 1.5rem 4rem;  /* ✅ This is the fix */
+  padding: 1rem 1.5rem 4rem;
   text-align: left;
 }
 
-main p:first-of-type {
+/* Nuke all top margin from first content */
+main *:first-child {
   margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
 main p {
