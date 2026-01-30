@@ -6,7 +6,20 @@
   <title>Contact - Diego Rey</title>
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+
   <style>
+    .profile-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .profile-header img {
+      height: 24px;
+      width: auto;
+    }
+
     .contact-form {
       max-width: 600px;
       margin: 0 auto;
@@ -43,15 +56,19 @@
     }
   </style>
 </head>
+
 <body>
   <header>
-    <h1><a href="index.html">Diego Rey</a></h1>
-    <a href="https://www.linkedin.com/in/diegorey/" target="_blank">
+    <div class="profile-header">
+      <h1><a href="index.html">Diego Rey</a></h1>
+      <a href="https://www.linkedin.com/in/diegorey/" target="_blank">
         <img src="logos/InBug-Black.png" alt="LinkedIn logo" />
-    </a>
-    <a href="https://x.com/diegoarey" target="_blank">
+      </a>
+      <a href="https://x.com/diegoarey" target="_blank">
         <img src="logos/logo-black.png" alt="X (Twitter) logo" />
-    </a>
+      </a>
+    </div>
+
     <nav>
       <a href="DiegoRey_CV.pdf" target="_blank">CV</a>
       <a href="https://scholar.google.com/citations?user=e81k_fIAAAAJ&hl=en" target="_blank">Publications</a>
