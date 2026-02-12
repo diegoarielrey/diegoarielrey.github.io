@@ -7,7 +7,6 @@
   <link rel="icon" type="image/png" href="melipal_favicon.png" />
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
-
   <style>
     .profile-header {
       display: flex;
@@ -19,26 +18,8 @@
       height: 24px;
       width: auto;
     }
-
-    /* Greek block (layout only) */
-    .fallibilism {
-      text-align: center;
-      margin-top: 60px;
-      margin-bottom: 40px;
-    }
-    .fallibilism .greek {
-      display: inline-block;
-      font-style: italic;
-      line-height: 1;
-      font-size: 28px;
-    }
-    .fallibilism .greek div {
-      margin: 0;
-      padding: 0;
-    }
   </style>
 </head>
-
 <body>
   <header>
     <div class="profile-header">
@@ -60,7 +41,7 @@
   </header>
 
   <main>
-    <section id="essay42">
+    <section>
 
       <h1>Agency, Error, and Reality</h1>
 
@@ -156,50 +137,10 @@
           <div>ἔλεγχος</div>
           <div>διόρθωσις</div>
         </div>
-      </section>
-
-    </section>
-
+        
     <footer>
       <p>&copy; 2026 Diego Rey</p>
     </footer>
   </main>
-
-  <script>
-    // Hard override: removes indent and tightens line spacing inside the essay only
-    (function () {
-      const root = document.getElementById("essay42");
-      if (!root) return;
-
-      const setImp = (el, prop, val) => el.style.setProperty(prop, val, "important");
-
-      // Tighter overall rhythm for the essay block
-      setImp(root, "max-width", "800px");
-      setImp(root, "margin", "0 auto");
-
-      const paragraphs = root.querySelectorAll("p");
-      paragraphs.forEach(p => {
-        setImp(p, "text-indent", "0");
-        setImp(p, "margin-top", "0");
-        setImp(p, "margin-bottom", "12px");
-        setImp(p, "line-height", "1.35");
-        setImp(p, "padding-left", "0");
-        setImp(p, "margin-left", "0");
-      });
-
-      const headings = root.querySelectorAll("h1,h2,h3");
-      headings.forEach(h => {
-        setImp(h, "line-height", "1.15");
-      });
-
-      const lists = root.querySelectorAll("ul,ol");
-      lists.forEach(l => {
-        setImp(l, "line-height", "1.35");
-        setImp(l, "margin-top", "6px");
-        setImp(l, "margin-bottom", "12px");
-      });
-    })();
-  </script>
-
 </body>
 </html>
