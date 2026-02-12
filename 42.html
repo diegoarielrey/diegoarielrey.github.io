@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" href="melipal_favicon.png" />
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+
   <style>
     .profile-header {
       display: flex;
@@ -19,60 +20,49 @@
       width: auto;
     }
 
-    /* Only affect the content below the menu */
-    .essay {
-      max-width: 800px;
-      margin: 0 auto;
-      font-family: Georgia, serif;
-      line-height: 1.6;
+    /* Only affect content below the menu on this page */
+    #essay42 p {
+      text-indent: 0 !important;
+      margin-top: 10px !important;
+      margin-bottom: 10px !important;
     }
 
-    /* Reduce vertical spacing between paragraphs and remove indent */
-    .essay p {
-      margin: 12px 0;
-      text-indent: 0;
+    /* If your styles.css uses special rules for first paragraph, override them */
+    #essay42 p:first-of-type {
+      text-indent: 0 !important;
     }
 
-    /* Tighten headings a bit */
-    .essay h1 {
-      margin: 0 0 12px 0;
+    /* Keep headings tight, without changing global h1/h2 styles */
+    #essay42 h1 {
+      margin-top: 0 !important;
+      margin-bottom: 14px !important;
     }
-    .essay h2 {
-      margin: 28px 0 10px 0;
+    #essay42 h2 {
+      margin-top: 26px !important;
+      margin-bottom: 10px !important;
     }
-    .essay h3 {
-      margin: 22px 0 8px 0;
-    }
-
-    /* Lists spacing */
-    .essay ul,
-    .essay ol {
-      margin: 10px 0 16px 22px;
+    #essay42 h3 {
+      margin-top: 20px !important;
+      margin-bottom: 8px !important;
     }
 
-    /* Footnote block */
-    .essay .footnote {
-      font-size: 15px;
-      font-style: italic;
-      color: #444;
-    }
-    .essay hr {
-      margin: 36px 0;
+    /* Lists: match index feel but not too airy */
+    #essay42 ul,
+    #essay42 ol {
+      margin-top: 10px !important;
+      margin-bottom: 14px !important;
     }
 
-    /* Greek words at bottom */
+    /* Greek block */
     .fallibilism {
       text-align: center;
       margin-top: 60px;
       margin-bottom: 40px;
-      font-style: italic;
     }
-
-    /* Each word on its own line, no vertical gaps */
     .fallibilism .greek {
       display: inline-block;
+      font-style: italic;
       line-height: 1;
-      font-size: 28px;
     }
     .fallibilism .greek div {
       margin: 0;
@@ -97,17 +87,19 @@
       <a href="https://scholar.google.com/citations?user=e81k_fIAAAAJ&hl=en" target="_blank">Publications</a>
       <a href="https://www.maitenconsulting.com" target="_blank">Consulting</a>
       <a href="contact.html">Contact</a>
-      <a href="c42.html">42</a>
+      <a href="42.html">42</a>
     </nav>
   </header>
 
   <main>
-    <section class="essay">
 
-      <h1 style="font-size: 32px;"><strong>Agency, Error, and Reality</strong></h1>
+    <!-- This wrapper is what we scope the spacing/indent changes to -->
+    <section id="essay42">
+
+      <h1>Agency, Error, and Reality</h1>
 
       <p style="font-size: 18px;">
-        <strong>Humans are agents*</strong> — entities that can act. Agency is the capacity to act through the formation and execution of intentions.
+        <strong>Humans are agents*</strong> - entities that can act. Agency is the capacity to act through the formation and execution of intentions.
       </p>
 
       <p>
@@ -124,7 +116,7 @@
         Which systems best preserve and expand human agency by enabling effective error correction?
       </p>
 
-      <h2 style="font-size: 24px;"><strong>Institutions that Preserve and Expand Agency</strong></h2>
+      <h2>Institutions that Preserve and Expand Agency</h2>
 
       <p>
         Because agency depends on knowledge, and knowledge improves through error correction, the best systems to enable error correction are those built around openness, decentralization, voluntary cooperation, and a shared commitment to truth over authority.
@@ -134,7 +126,7 @@
         In practice, this points to liberal democracy and rule-bound market economies, not as perfect systems, but as the most effective large-scale arrangements we have discovered so far for identifying mistakes, correcting them, and improving outcomes over time.
       </p>
 
-      <h3 style="font-size: 22px;"><strong>Liberal Democracy</strong></h3>
+      <h3>Liberal Democracy</h3>
 
       <p>
         Liberal democracy supports agency by enabling institutional error correction:
@@ -150,7 +142,7 @@
         These features matter not because democracy is morally infallible, but because systems that suppress criticism lose the ability to learn.
       </p>
 
-      <h3 style="font-size: 22px;"><strong>Rule-Bound Market Economies</strong></h3>
+      <h3>Rule-Bound Market Economies</h3>
 
       <p>
         Rule-bound market economies support agency by decentralizing problem-solving and experimentation:
@@ -166,46 +158,29 @@
         Like scientific inquiry, markets remain error-correcting only when rules prevent coercion, fraud, monopoly, and the shifting of costs onto others, and when participants are free to test, revise, and improve their ideas.
       </p>
 
-      <h2 style="font-size: 24px;"><strong>Philosophical Commitments</strong></h2>
+      <h2>Philosophical Commitments</h2>
 
       <p>
         Knowledge advances through open-ended criticism and fallible reasoning, and agency depends on institutions that protect this process.
       </p>
 
       <ol>
-        <li><strong>Fallibilism</strong> – All knowledge is provisional and open to improvement.</li>
-        <li><strong>Critical Inquiry</strong> – Progress comes from open criticism and reasoned disagreement.</li>
-        <li><strong>Decentralization of Power</strong> – No single authority has final knowledge; error correction requires pluralism.</li>
-        <li><strong>Incentive Alignment</strong> – Systems should reward problem-solving and truth-seeking, not obedience.</li>
-        <li><strong>Secular Humanism</strong> – Ethics arises from concern for human agency, dignity, and compassion, not divine command.</li>
+        <li><strong>Fallibilism</strong> - All knowledge is provisional and open to improvement.</li>
+        <li><strong>Critical Inquiry</strong> - Progress comes from open criticism and reasoned disagreement.</li>
+        <li><strong>Decentralization of Power</strong> - No single authority has final knowledge; error correction requires pluralism.</li>
+        <li><strong>Incentive Alignment</strong> - Systems should reward problem-solving and truth-seeking, not obedience.</li>
+        <li><strong>Secular Humanism</strong> - Ethics arises from concern for human agency, dignity, and compassion, not divine command.</li>
       </ol>
 
       <hr>
 
-      <div class="footnote">
-        <p>
-          *Why humans are agents is unknown. The following is a possible explanation for how agents emerged.
-        </p>
-
-        <p>
-          The Sun supplies a persistent low-entropy energy flux, driving matter far from equilibrium. Energy must dissipate, and the laws of physics restrict how matter can move, forcing dissipation to occur through specific interactions rather than arbitrarily. Transient ordered structures arise as a consequence of these restrictions (Schrödinger, <em>What Is Life?</em>).
-        </p>
-
-        <p>
-          Most such structures arise only briefly. Some molecular processes, however, use energy flow to repeatedly copy their own structure. Information-encoding molecules enable this repeatable, energy-driven copying. Replication arises from this repeatability, not from preference or stability.
-        </p>
-
-        <p>
-          Copying with variation enables evolution, as formalized by Marletto’s <em>The Constructor Theory of Life</em>, which shows that self-reproduction and Darwinian evolution are compatible with ordinary, no-design laws of physics when certain informational transformations are possible.
-        </p>
-
-        <p>
-          Once replication with variation exists, informational structures that are copied more frequently become increasingly represented over time. Genes can be understood as such replicators, with organisms serving as transient vehicles for their propagation (Dawkins, <em>The Selfish Gene</em>).
-        </p>
-
-        <p>
-          Some systems evolve mechanisms in which internal chemical states trigger physical responses to environmental conditions, for example chemotaxis toward nutrients. Such mechanisms increase replication frequency by coupling sensed conditions to action. Brains evolved as increasingly flexible extensions of this capacity. The control of action they enable is what we call agency.
-        </p>
+      <div style="font-size: 15px; font-style: italic; color: #444;">
+        <p>*Why humans are agents is unknown. The following is a possible explanation for how agents emerged.</p>
+        <p>The Sun supplies a persistent low-entropy energy flux, driving matter far from equilibrium. Energy must dissipate, and the laws of physics restrict how matter can move, forcing dissipation to occur through specific interactions rather than arbitrarily. Transient ordered structures arise as a consequence of these restrictions (Schrödinger, <em>What Is Life?</em>).</p>
+        <p>Most such structures arise only briefly. Some molecular processes, however, use energy flow to repeatedly copy their own structure. Information-encoding molecules enable this repeatable, energy-driven copying. Replication arises from this repeatability, not from preference or stability.</p>
+        <p>Copying with variation enables evolution, as formalized by Marletto’s <em>The Constructor Theory of Life</em>, which shows that self-reproduction and Darwinian evolution are compatible with ordinary, no-design laws of physics when certain informational transformations are possible.</p>
+        <p>Once replication with variation exists, informational structures that are copied more frequently become increasingly represented over time. Genes can be understood as such replicators, with organisms serving as transient vehicles for their propagation (Dawkins, <em>The Selfish Gene</em>).</p>
+        <p>Some systems evolve mechanisms in which internal chemical states trigger physical responses to environmental conditions, for example chemotaxis toward nutrients. Such mechanisms increase replication frequency by coupling sensed conditions to action. Brains evolved as increasingly flexible extensions of this capacity. The control of action they enable is what we call agency.</p>
       </div>
 
       <section class="fallibilism" aria-label="Fallibilism sequence">
@@ -222,6 +197,7 @@
     <footer>
       <p>&copy; 2026 Diego Rey</p>
     </footer>
+
   </main>
 </body>
 </html>
